@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<title>Pet Adoption Survey</title>
+
+			<link rel="stylesheet" type="text/css" href="./style.css">
+			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kanit">
+
+
+			
+		</head>
+
+		<body class="background">
+
+			<header>
+				<h1 id="title">Pet Adoption Survey</h1>
+				<p id="description">This adoption survey gathers information about your expectations of having a pet and helps the adoption counselor suggest pets who might best suit your lifestyle.<br><br>Please fill out the following survey to help us find the best match for you!</p>
+			</header>
+
+			<main>
+				<form id="survey-form">
+
+					<section class="grid-container1">
+						<label for="name" id="name-label" class="grid-item">First Name <input type="text" id="name" name="applicant" class="input-text" placeholder="Enter your First name" required></label>
+						<label for="lastname" id="lastname-label" class="grid-item">Last Name <input type="text" id="lastname" name="applicant" class="input-text" placeholder="Enter your Last name" required></label>
+						<label for="email" id="email-label" class="grid-item">E-mail <input type="email" id="email" name="applicant" class="input-text" placeholder="Enter your E-mail" required></label>
+						<label for="number" id="number-label" class="grid-item">Age <input type="number" id="number" min="10" max="99" name="applicant" id="number-label" class="input-text" placeholder="Enter your Age" required></label>
+					</section>
+
+					<h3>Tell us about yourself and what are you looking for:</h3>
+
+					<section class="grid-container4">
+						<p>● I live in a:
+							<select id="dropdown" name="dwelling" class="dropdown" required>
+								<option disabled selected value>Select an option</option>
+								<option value="house">House</option>
+								<option value="duplex">Duplex</option>
+								<option value="townhome">Townhome</option>
+								<option value="condo">Condo</option>
+								<option value="apartment">Apartment</option>
+								<option value="other">Other</option>
+							</select>
+						</p>
+			
+						<p>● I currently:
+							<select id="dropdown1" name="living-situation" class="dropdown" required>
+								<option disabled selected value>Select an option</option>
+								<option value="own">Own</option>
+								<option value="rent">Rent</option>
+								<option value="at-relative/friend">Live at a relative's/friend's home</option>
+							</select>
+
+						</p>
+				</section>
+
+						
+					<p>● This pet will live with the following people (check all that apply):<br>
+						<label><input type="checkbox" value="dog" name="kind-of-pet" class="checkbox"> Children (0-5 years)</label><br>
+						<label><input type="checkbox" value="cat" name="kind-of-pet" class="checkbox"> Children(6-12)</label><br>
+						<label><input type="checkbox" value="small-mammal" name="kind-of-pet" class="checkbox"> Teens (13-18)</label><br>
+						<label><input type="checkbox" value="bird" name="kind-of-pet" class="checkbox"> Other Adults</label><br>
+						<label><input type="checkbox" value="reptile" name="kind-of-pet" class="checkbox"> Senior Citizens</label><br>
+						<label><input type="checkbox" value="other" name="kind-of-pet" class="checkbox"> Just me</label>
+					</p>
+				
+					<p>● Do you have other pets in the home? 
+						<label><input type="radio" value="yes" name="other-pets" class="radio"> Yes</label>
+						<label><input type="radio" value="no" name="other-pets" class="radio"> No</label>
+					</p>
+					
+
+					<p>● Have those pets been spayed and/or neutered? 
+						<label><input type="radio" value="yes" name="spayed-neutered" class="radio"> Yes</label>
+						<label><input type="radio" value="no" name="spayed-neutered" class="radio"> No</label>
+					</p>
+					
+
+					<p>● How would you describe your household?<br>
+						<label><input type="radio" value="other" name="household" class="radio"> Lots of Visitors and Noise</label><br>
+						<label><input type="radio" value="other" name="household" class="radio"> Mix Between Quiet and Loud</label><br>
+						<label><input type="radio" value="other" name="household" class="radio"> Not Many Guests and very quiet</label>
+					</p>
+					
+
+					<p>● Do you have experience in training to resolve or manage challenging behaviors?<br>
+						<section class="grid-container2">
+							<label><input type="radio" value="no-experience" name="training" class="radio"> No experience</label>
+							<label><input type="radio" value="some-experience" name="training" class="radio"> Some experience</label>
+							<label><input type="radio" value="a-lot-of-experience" name="training" class="radio"> A lot of experience</label>
+						</section>
+					</p>
+					
+
+					<p>● I have prepared a budget for food, vaccines and medical care for my pet:<br>
+						<label><input type="radio" value="yes" name="budget" class="radio"> Yes</label>
+						<label><input type="radio" value="no" name="budget" class="radio"> No</label>
+					</p>
+				
+
+					<p>● What kind of pet do you have/are you thinking of adopting? (check all that apply)<br>
+						<label><input type="checkbox" value="dog" name="kind-of-pet" class="checkbox"> Dog</label><br>
+						<label><input type="checkbox" value="cat" name="kind-of-pet" class="checkbox"> Cat</label><br>
+						<label><input type="checkbox" value="small-mammal" name="kind-of-pet" class="checkbox"> Small Mammal (Rabbit/Hamster/Guinea Pig/etc.)</label><br>
+						<label><input type="checkbox" value="bird" name="kind-of-pet" class="checkbox"> Bird</label><br>
+						<label><input type="checkbox" value="reptile" name="kind-of-pet" class="checkbox"> Reptile</label><br>
+						<label><input type="checkbox" value="other" name="kind-of-pet" class="checkbox"> Other</label>
+						<label><input type="textbox" name="kind-of-pet" placeholder="Please specify." class="textbox"></label>	
+					</p>		
+
+					<p>● Behaviors/Circumstances you will not tolerate (check all that apply):<br>
+						<label><input type="checkbox" value="training-issues" name="behaviors-circumstances" class="checkbox"> House training issues</label><br>
+						<label><input type="checkbox" value="issues-with-other-pets" name="behaviors-circumstances" class="checkbox"> Issues with other pets</label><br>
+						<label><input type="checkbox" value="allergies" name="behaviors-circumstances" class="checkbox"> Allergies</label><br>
+						<label><input type="checkbox" value="destructiveness" name="behaviors-circumstances" class="checkbox"> Destructiveness</label><br>
+						<label><input type="checkbox" value="other" name="behaviors-circumstances" class="checkbox"> Other</label>
+						<label><input type="textbox" name="behaviors-circumstances" placeholder="Please specify." class="textbox"></label>	
+					</p>
+
+					<p>● My dog will be alone during the day for:<br>
+						<section class="grid-container3">
+							<label><input type="radio" value="yes" name="alone" class="radio">  4 hours or less</label>
+							<label><input type="radio" value="no" name="alone" class="radio"> 4-8 hours</label>
+							<label><input type="radio" value="maybe" name="alone" class="radio">  8-10 hours</label>
+							<label><input type="radio" value="maybe" name="alone" class="radio"> 10+ hours</label>
+						</section>
+					</p>
+
+					<p>● I am interested in adopting a dog with special needs (medical or behavioral):<br>
+						<label><input type="radio" value="yes" name="special-needs" class="radio"> Yes</label>
+						<label><input type="radio" value="no" name="special-needs" class="radio"> No</label>
+						<label><input type="radio" value="maybe" name="special-needs" class="radio"> Maybe</label>
+					</p>
+
+					<p>● If I move, I will:
+						<select id="dropdown3" name="move" class="dropdown" required>
+							<option disabled selected value>Select an option</option>
+							<option value="take-it">Take the pet with me</option>
+							<option value="family-member">Give to a family member</option>
+							<option value="new-home">Find the pet a new home</option>
+							<option value="animal-shelter">Surrender to an Animal Shelter</option>			
+						</select>
+					</p>
+					
+
+					<p>Please feel free to provide any additional information regarding your adoption:</p>
+					<textarea maxlength="300">0 of 300 max characters.</textarea>
+
+					
+					<br><button type="submit" id="submit">Submit</button>
+				</form>
+				
+			</main>
+
+			<footer>
+				
+			</footer>
+
+		</body>
+
+	</html>

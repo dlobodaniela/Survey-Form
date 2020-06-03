@@ -7,10 +7,8 @@
 
 			<title>Pet Adoption Survey</title>
 
-			<link rel="stylesheet" type="text/css" href="./style.css">
+			<link rel="stylesheet" type="text/css" href="./style.css"> 
 			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kanit">
-
-
 			
 		</head>
 
@@ -24,16 +22,16 @@
 			<main>
 				<form id="survey-form">
 
-					<section class="grid-container1">
+					<section class="grid-personalData">
 						<label for="name" id="name-label" class="grid-item">First Name <input type="text" id="name" name="applicant" class="input-text" placeholder="Enter your First name" required></label>
 						<label for="lastname" id="lastname-label" class="grid-item">Last Name <input type="text" id="lastname" name="applicant" class="input-text" placeholder="Enter your Last name" required></label>
-						<label for="email" id="email-label" class="grid-item">E-mail <input type="email" id="email" name="applicant" class="input-text" placeholder="Enter your E-mail" required></label>
-						<label for="number" id="number-label" class="grid-item">Age <input type="number" id="number" min="10" max="99" name="applicant" id="number-label" class="input-text" placeholder="Enter your Age" required></label>
+						<label for="email" id="email-label" class="grid-item"><span class="span-email">E-mail </span><input type="email" id="email" name="applicant" class="input-text" placeholder="Enter your E-mail" required></label>
+						<label for="number" id="number-label" class="grid-item"><span class="span-age">Age </span><input type="number" id="number" min="10" max="99" name="applicant" id="number-label" class="input-text" placeholder="Enter your Age" required></label>
 					</section>
 
 					<h3>Tell us about yourself and what are you looking for:</h3>
 
-					<section class="grid-container4">
+					<section class="grid-homeType">
 						<p>● I live in a:
 							<select id="dropdown" name="dwelling" class="dropdown" required>
 								<option disabled selected value>Select an option</option>
@@ -87,7 +85,7 @@
 					
 
 					<p>● Do you have experience in training to resolve or manage challenging behaviors?<br>
-						<section class="grid-container2">
+						<section class="grid-training">
 							<label><input type="radio" value="no-experience" name="training" class="radio"> No experience</label>
 							<label><input type="radio" value="some-experience" name="training" class="radio"> Some experience</label>
 							<label><input type="radio" value="a-lot-of-experience" name="training" class="radio"> A lot of experience</label>
@@ -120,8 +118,8 @@
 						<label><input type="textbox" name="behaviors-circumstances" placeholder="Please specify." class="textbox"></label>	
 					</p>
 
-					<p>● My dog will be alone during the day for:<br>
-						<section class="grid-container3">
+					<p>● My pet will be alone during the day for:<br>
+						<section class="grid-hoursAlone">
 							<label><input type="radio" value="yes" name="alone" class="radio">  4 hours or less</label>
 							<label><input type="radio" value="no" name="alone" class="radio"> 4-8 hours</label>
 							<label><input type="radio" value="maybe" name="alone" class="radio">  8-10 hours</label>

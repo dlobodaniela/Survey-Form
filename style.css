@@ -1,5 +1,5 @@
 
-.background {
+ .background {
 	background-image: url(https://www.biognost.be/diagnostics/wp-content/uploads/2018/05/pets.jpg);
 	max-width: 100%;
 	height: 199px;
@@ -15,13 +15,13 @@
 body {
 	font-family: Kanit;
 	font-size: 1.2rem;
-
+	
 }
 
 #survey-form {
 /*	border: 2px solid blue;   */
 	margin: 0px 270px 50px 270px;
-	padding: 30px;
+	padding: 25px;
 /*	background-color: #232076E6;   */
 	background-color: #9BE0CFBF;
 	border-radius: 30px;
@@ -45,8 +45,8 @@ textarea {
 }
 
 
-.grid-container1 {
-	display: grid;
+.grid-personalData {
+	display: grid;  
 	grid-template-columns: auto auto;
 	grid-template-rows: 70px 70px;
 /*	border: 2px solid #403152;   */
@@ -55,14 +55,14 @@ textarea {
 
 }
 
-.grid-container2 {
+.grid-training {
 	display: grid;
 	grid-template-columns: auto auto auto;
 /*	border: 2px solid #403152;  */
 
 }
 
-.grid-container3 {
+.grid-hoursAlone {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 /*	border: 2px solid #403152;  */
@@ -70,9 +70,10 @@ textarea {
 }
 
 
-.grid-container4 {
+.grid-homeType {
 	display: grid;
 	grid-template-columns: auto auto;
+	text-align: center;
 /*	border: 2px solid #403152;  */
 	
 }
@@ -126,4 +127,103 @@ textarea {
  	width: 80%;
 
 }
+
+
+.span-email {
+	padding-left: 10%;
+}
+
+.span-age {
+	padding-left: 16%;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+	
+	#survey-form, header {
+		margin: auto;
+		max-width: 100%;
+		font-size: 0.8rem;
+
+	}
+
+	main {
+		padding-bottom: 30px;
+	}
+
+	.background {
+		background-image: url(https://i.pinimg.com/736x/11/d2/19/11d219748f555cea666871c90d15d9cd.jpg);
+		max-width: 100%;
+		background-size: 100%;
+		background-color: #FFFFFF26;
+		background-blend-mode: lighten;   
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+
+	}
+
+	.grid-personalData, .grid-training, .grid-hoursAlone {
+		display: grid;  
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	/*	border: 2px solid #403152;  */
+	/*	text-align: center;   */
+	}
+
+	.grid-homeType {
+		display: inherit;
+		inline-size: max-content;
+		text-align: left;
+	}
+
+	.span-email {
+		padding-left: 8%;
+	}
+	
+	.span-age {
+		padding-left: 13%;
+	}
+	
+	.dropdown {
+		width: auto;
+		height: 2.375rem;
+		padding: 0.275rem 0.2rem;  
+		font-size: 84%;
+	}
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1500px) {
+	
+
+
+	#survey-form, header {
+		margin: auto;
+		max-width: 100%;
+		font-size: 0.8rem;
+
+	}
+
+	.background {
+		background-image: url(https://i.pinimg.com/736x/11/d2/19/11d219748f555cea666871c90d15d9cd.jpg);
+		max-width: 100%;
+		height: 199px;  
+		background-size: 100%;
+		background-color: #FFFFFF26;
+		background-blend-mode: lighten;   
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+
+	}
+
+}
+
 
